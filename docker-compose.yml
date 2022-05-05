@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+  jf_poll:
+    build:
+      context: ./jf_poll
+    network_mode: host
+    
+  hub_poll:
+    build:
+      context: ./hub_poll
+    network_mode: host
+    
+  soro:
+    image: bh.cr/g_ayan_pahwa/soro
+    network_mode: host
